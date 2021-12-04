@@ -1,0 +1,32 @@
+{% extends 'core/base.html'%}
+{%load static %}
+{%block content%}
+<div class="mt-5 ">
+    <div class="text-center"><img src="{%static 'core/images/mypic.jpg'%}" alt="mypic" class="img-thumbnail"
+            width="250px" height="150px"></div>
+
+    <div class="mt-5 text-white mx-5 text-justify">
+        <div>
+            <h1 class="font-weight-bold st-font mt-5 text-white mx-5 text-center typewrite 
+                 data-period=" 2000"
+                data-type='["Hi, I am Shrikant", "I am Creative.", "I Love Coding.", "I Love to Develop." ]'>
+                <span class="wrap"></span>
+
+            </h1>
+        </div>
+        <h1 class="font-weight-bold st-font">Hello,</h1>
+        <div class="px-4" style="line-height:2rem;">
+            <p style="text-indent: 100px;">I am <b class="text-warning">Shrikant Bache. </b>
+                <b>I'm pursuning Computer Enginnering from Savitribai Phule Pune University. </b><br>
+                I want to be the part of an organization that provide clear direction, where I encouraged and motivated
+                to welcome challenges and contribute my knowledge, experience and skills as well as taking the
+                opportunity to learn from others in order to achieve the goals of the organization.
+            </p>
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="{%url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire me</a>
+        <a href="{%url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+    </div>
+</div>
+{%endblock content%}
